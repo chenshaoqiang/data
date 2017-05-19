@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOFFE</title>
+        
+    <link rel="stylesheet" type="text/css" href="./React基础知识详解(es6)_files/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                YOFFE
+            
+        </div>
+        <input type="checkbox" id="idoc_nav">
+        <div class="menu_tree">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/index.html">首页</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#"><span></span>React课程专题</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.html">React学习指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB.html">React技术分享</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html">React编码规范</a></li><li class="active"><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">React基础知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%B8%80%E6%AD%A5%E6%AD%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E5%BA%94%E7%94%A8.html">一步步搭建一个评论应用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/github-notetaker%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91.html">github-notetaker应用开发</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-AJAX%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html">React-AJAX的最佳实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html">React-router路由实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E9%AB%98%E7%BA%A7%E7%A0%94%E8%AE%A8%E8%AF%BE%E5%A4%A7%E7%BA%B2.html">React高级研讨课大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Babel%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">Babel使用指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%85%A8%E6%A0%88Redux%E5%AE%9E%E6%88%98.html">全栈Redux实战</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html">Redux快速上手</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E8%B6%85%E9%85%B7%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Redux-Devtools.html">Redux超酷的开发工具Redux-Devtools</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Redux%E7%9A%84Middleware.html">深入理解Redux的Middleware</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/JavaScript%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B.html">JavaScript函数式编程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E7%BB%84%E4%BB%B6%E6%B5%8B%E8%AF%95.html">组件测试</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建开发态工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html">Webpack基础</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建生产环境工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%BF%AB%E9%80%9F%E6%90%9E%E5%AE%9A%E5%B8%B8%E7%94%A8%E7%9A%84ES6%E6%96%B0%E7%89%B9%E6%80%A7.html">快速搞定常用的ES6新特性</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#"><span></span>前沿观察</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/ECMAScript%206%E5%85%A5%E9%97%A8.html">ECMAScript 6入门</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Immutable%E8%AF%A6%E8%A7%A3%E5%8F%8AReact%E4%B8%AD%E5%AE%9E%E8%B7%B5.html">Immutable详解及React中实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Node.js%20MVC%E6%A1%86%E6%9E%B6ThinkJS.html">Node.js MVC框架ThinkJS</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Nodejs%205.0.0%E7%89%88%E6%9C%AC.html">Nodejs 5.0.0版本</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93PostgreSQL.html">关系型数据库PostgreSQL</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E8%BD%BB%E5%9E%8BMVVM%E6%A1%86%E6%9E%B6Vue.js.html">轻型MVVM框架Vue.js</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%9F%BA%E4%BA%8Enodejs%E7%9A%84%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6koa.html">基于nodejs的开发框架koa</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#"><span></span>前端工程化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E6%A8%A1%E6%9D%BF.html">前端模板</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%92%8C%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87.html">性能优化和前端工程的爱恨情仇</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/webpack%E5%85%A5%E9%97%A8%E5%8F%8A%E5%AE%9E%E8%B7%B5.html">webpack入门及实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E4%B8%8D%E5%AE%8C%E5%85%A8%E8%A3%85%E9%80%BC%E6%8C%87%E5%8D%97.html">前端工程化不完全装逼指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#"><span></span>性能优化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B.html">jshint代码质量检测</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.html">jshint配置说明</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/NC%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html">NC性能优化</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9.html">性能优化待办事项</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%82%B9%E6%80%BB%E7%BB%93.html">性能优化点总结</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#"><span></span>技术分享</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0Git.html">学习Git</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html">面向对象</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Node.js%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">Node.js知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/2015%E5%B9%B4%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html">2015年大前端技术年终总结</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Nodejs%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">Nodejs环境配置</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/NPM%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">NPM的使用方法</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%9F%BA%E6%9C%ACSHELL%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.html">基本SHELL命令使用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Git%E5%92%8CGithub%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html">Git和Github快速入门指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#"><span></span>团队</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C%E6%8C%87%E5%8D%97.html">新员工入职指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%A4%A7%E7%BA%B2.html">笔试面试大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88%E8%A7%84%E5%88%92.html">项目技术栈规划</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B.html">React组件开发过程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0.html">前端技术平台</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/CONTACT.html">CONTACT</a></li></ul>    
+        </div>
+        
+        
+        <div class="forkgithub"><a target="_blank" href="https://github.com/GuoYongfeng">fork on github</a></div>
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t0React基础知识详解">React基础知识详解</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t11. 顶层API">1. 顶层API</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t2react.js">react.js</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t3react-dom.js">react-dom.js</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t4react-dom-server.js">react-dom-server.js</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t52. jsx语法">2. jsx语法</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t62.1 注释、命名、根元素个数、JSX 嵌入变量">2.1 注释、命名、根元素个数、JSX 嵌入变量</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t72.2 styles">2.2 styles</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t82.3  JSX SPREAD">2.3  JSX SPREAD</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t92.4 属性名不能和 js 关键字冲突">2.4 属性名不能和 js 关键字冲突</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t103. 数据流：state props propType">3. 数据流：state props propType</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t113.1 state &amp;&amp; setState">3.1 state &amp;&amp; setState</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t123.2 props">3.2 props</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t133.3 propTypes">3.3 propTypes</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t144. 调用API定义组件">4. 调用API定义组件</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t154.1 组件初始定义">4.1 组件初始定义</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t164.2 初次创建组件时调用">4.2 初次创建组件时调用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t174.3 组件的属性值改变时调用">4.3 组件的属性值改变时调用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t184.4 销毁组件">4.4 销毁组件</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t194.5 示例诠释组件全生命周期">4.5 示例诠释组件全生命周期</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t204.6 回顾组件的渲染过程">4.6 回顾组件的渲染过程</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t215. 使用ref对操作DOM">5. 使用ref对操作DOM</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t226. 事件event">6. 事件event</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t237. 组件的组合">7. 组件的组合</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t247.1 受限组件 &amp;&amp; 非受限组件">7.1 受限组件 &amp;&amp; 非受限组件</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t257.2 使用自定义的组件">7.2 使用自定义的组件</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t267.3 组合 CHILDREN">7.3 组合 CHILDREN</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t278. form表单操作">8. form表单操作</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t288.1 React表单组件和 html 的不同点">8.1 React表单组件和 html 的不同点</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t298.2 综合表达组件示例">8.2 综合表达组件示例</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t309. mixin共享">9. mixin共享</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t31基础部分完结寄语">基础部分完结寄语</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 style="font-size: 40px;text-align:center;color: #007cdc;" id="t0React基础知识详解">React基础知识详解 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t0React基础知识详解"> # </a></h1>
+
+<blockquote>
+<p><strong>编者按：</strong>除组件化、虚拟DOM在复用以及性能上带来的一般好处外，React思想使得开发者之间更好的分工与合作，在配合上非常顺畅，规范的接口以及极强的约束，使得整个代码结构清晰，不同开发者的代码高度一致。</p>
+</blockquote>
+<p>本次课程示例代码请前往<a href="https://github.com/zhufengreact/zhufeng-react-tutorial">react-tutorial</a>。
+示例中采用ES6语法来写React组件代码，提前明确以下几点：</p>
+<ul>
+<li>不支持 <code>getInitialState</code> 在设置组件初始的 <code>state</code> ，可在组件的 <code>constructor</code> 中通过 <code>this.state</code> 设置，也可直接作为 <code>properties</code> 定义</li>
+<li><code>propTypes、defaultProps</code> 作为 <code>properties</code> 定义，也可在组件外部通过键值对方式设置。</li>
+<li>不支持 <code>mixins</code>，可以使用<em>高阶组件</em>写法，或者 <code>decorator</code>。</li>
+</ul>
+<h2 id="t11. 顶层API">1. 顶层API <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t11. 顶层API"> # </a></h2>
+<p>最简单的React组件及其渲染</p>
+<pre><code>import React, { Component } from 'react';
+
+/**
+ * 最简单的一个组件
+ */
+class SimpleComponent extends Component {
+  render(){
+    return &lt;div&gt; here we go &lt;/div&gt;;
+  }
+}
+
+// 我们可以看看React给我们提供了哪些顶层组件
+console.log( React );
+
+export default SimpleComponent;
+</code></pre><h3 id="t2react.js">react.js <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t2react.js"> # </a></h3>
+<pre><code>React.Children: Object
+React.Component: ReactComponent(props, context, updater)
+React.DOM: Object
+React.PropTypes: Object
+React.cloneElement: (element, props, children)
+React.createClass: (spec)
+React.createElement: (type, props, children)
+React.createFactory: (type)
+React.createMixin: (mixin)
+React.isValidElement: (object)
+</code></pre><p><img src="./React基础知识详解(es6)_files/react-api.png"></p>
+<p>Component API</p>
+<pre><code>this.context: Object
+this.props: Object
+this.refs: Object
+this.state: Object
+this.setState: Object
+</code></pre><h3 id="t3react-dom.js">react-dom.js <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t3react-dom.js"> # </a></h3>
+<pre><code>ReactDOM.findDOMNode: findDOMNode(componentOrElement)
+ReactDOM.render: ()
+ReactDOM.unmountComponentAtNode: (container)
+</code></pre><h3 id="t4react-dom-server.js">react-dom-server.js <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t4react-dom-server.js"> # </a></h3>
+<pre><code>ReactDOMServer.renderToString
+ReactDOMServer.renderToStaticMarkup
+</code></pre><h2 id="t52. jsx语法">2. jsx语法 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t52. jsx语法"> # </a></h2>
+<p>类似 xml 的语法，用来描述组件树</p>
+<pre><code>&lt;div classname="x"&gt;
+  &lt;a href="#"&gt;#&lt;/a&gt;
+    &lt;component x="y"&gt;1&lt;/component&gt;
+&lt;/div&gt;
+</code></pre><p>不用JSX，用React提供的API写的话</p>
+<pre><code>React.createElement('div',{
+  className:'x'
+    },[
+    React.createElement('a',{href:'#'},'#'),
+    React.createElement(Component,{x:'y'},1);
+]);
+</code></pre><h3 id="t62.1 注释、命名、根元素个数、JSX 嵌入变量">2.1 注释、命名、根元素个数、JSX 嵌入变量 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t62.1 注释、命名、根元素个数、JSX 嵌入变量"> # </a></h3>
+<pre><code>import React, { Component } from 'react';
+
+// 1. 组件命名遵循驼峰命名，首字母大写
+class ComponentDemo extends Component {
+  render(){
+    {
+      /*
+      2. 这是代码注释
+      也可以是多行
+      */
+    }
+    const name = this.props.name;
+
+    // 3. render 方法 return 回来的根元素只能是一个，超过会报错
+    // 4. { } 里面可以写JS代码
+    return (
+      &lt;div&gt;
+        hello, {name ? name : "我是默认的"}
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default ComponentDemo;
+</code></pre><ul>
+<li>React只有一个限制， 组件只能渲染单个根节点。如果你想要返回多个节点，它们必须被包含在同一个节点里。</li>
+</ul>
+<h3 id="t72.2 styles">2.2 styles <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t72.2 styles"> # </a></h3>
+<pre><code>import React, { Component } from 'react';
+
+class StyleDemo extends Component {
+  render(){
+    // 5. 在JS文件里面给组件定义样式
+    var MyComponentStyles = {
+        color: 'blue',
+        fontSize: '28px'
+    };
+
+    return (
+      &lt;div style={MyComponentStyles}&gt;
+          可以直接这样写行内样式
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default StyleDemo;
+</code></pre><h3 id="t82.3  JSX SPREAD">2.3  JSX SPREAD <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t82.3  JSX SPREAD"> # </a></h3>
+<p>可以用通过 {...obj} 来批量设置一个对象的键值对到组件的属性，注意顺序</p>
+<pre><code>import React, { Component } from 'react';
+
+class SpreadDemo extends Component {
+  componentWillMount(){
+    console.log(this.props);
+  }
+  render(){
+    return &lt;h1&gt; {this.props.name} is a {this.props.type} &lt;/h1&gt;;
+  }
+}
+
+export default SpreadDemo;
+</code></pre><h3 id="t92.4 属性名不能和 js 关键字冲突">2.4 属性名不能和 js 关键字冲突 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t92.4 属性名不能和 js 关键字冲突"> # </a></h3>
+<p>例如：className, readOnly, htmlfor</p>
+<h2 id="t103. 数据流：state props propType">3. 数据流：state props propType <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t103. 数据流：state props propType"> # </a></h2>
+<h3 id="t113.1 state &amp;&amp; setState">3.1 state &amp;&amp; setState <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t113.1 state &amp;&amp; setState"> # </a></h3>
+<p>用状态控制组件变化
+可以把一个组件看做一个状态机, 每一次状态对应于组件的一个 ui</p>
+<p><strong>组件内部的状态，可以使用 state</strong></p>
+<pre><code>import React, { Component } from 'react';
+
+class StateDemo extends Component {
+
+  state = {
+    secondsElapsed: 0
+  }
+
+  tick(){
+    this.setState({ secondsElapsed: this.state.secondsElapsed + 1 });
+  }
+
+  componentDidMount(){
+    this.interval = setInterval( this.tick.bind(this), 1000 );
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.interval);
+  }
+
+  render(){
+    return (
+      &lt;div&gt;目前已经计时：{this.state.secondsElapsed}秒&lt;/div&gt;
+    )
+  }
+}
+
+export default StateDemo;
+</code></pre><h3 id="t123.2 props">3.2 props <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t123.2 props"> # </a></h3>
+<p>通过 this.props 可以获取传递给该组件的属性值，还可以通过定义 getDefaultProps 来指定默认属性值（这是ES5的写法，ES6定义组件的默认props可以直接写props）</p>
+<p>下面几个是props的常用API：</p>
+<ul>
+<li><code>this.props.children</code></li>
+<li><code>this.props.map</code></li>
+<li><code>this.props.filter</code></li>
+</ul>
+<p><strong>props是调用组件的时候传递进去的数据，一般用于组件树数据传递</strong></p>
+<pre><code>import React, { Component } from 'react';
+
+class PropsDemo extends Component {
+  props = {
+    title: '这是默认的title属性值'
+  }
+  render(){
+    console.log(this.props);
+
+    return &lt;b&gt;{this.props.title}&lt;/b&gt;
+  }
+}
+
+export default PropsDemo;
+
+
+// 组件调用方式
+// &lt;PropsDemo title="设置的标题" /&gt;
+</code></pre><h3 id="t133.3 propTypes">3.3 propTypes <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t133.3 propTypes"> # </a></h3>
+<p>通过指定 propTypes 可以校验props属性值的类型，校验可提升开发者体验，用于约定统一的接口规范。</p>
+<pre><code>import React, { Component, PropTypes } from 'react';
+
+class PropTypesDemo extends Component {
+
+  static propTypes = {
+    title: PropTypes.string.isRequired
+  }
+
+  props = {
+      title: '默认的title'
+  }
+
+  render(){
+    return &lt;b&gt;{this.props.title}&lt;/b&gt;
+  }
+}
+
+export default PropTypesDemo;
+</code></pre><h2 id="t144. 调用API定义组件">4. 调用API定义组件 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t144. 调用API定义组件"> # </a></h2>
+<p>用 React.createClass或者React.Component 定义组件时允许传入相应的配置及组件API的使用，包括组件生命周期提供的一系列钩子函数。</p>
+<h3 id="t154.1 组件初始定义">4.1 组件初始定义 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t154.1 组件初始定义"> # </a></h3>
+<ul>
+<li>getDefaultProps 得到默认属性对象，这个在ES6的时候不需要这样定义</li>
+<li>propTypes 属性检验规则</li>
+<li>mixins 组件间公用方法</li>
+</ul>
+<h3 id="t164.2 初次创建组件时调用">4.2 初次创建组件时调用 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t164.2 初次创建组件时调用"> # </a></h3>
+<ul>
+<li>getInitialState 得到初始状态对象</li>
+<li>render 返回组件树. 必须设置</li>
+<li>componentDidMount 渲染到 dom 树中是调用，只在客户端调用，可用于获取原生节点</li>
+</ul>
+<h3 id="t174.3 组件的属性值改变时调用">4.3 组件的属性值改变时调用 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t174.3 组件的属性值改变时调用"> # </a></h3>
+<ul>
+<li>componentWillReceiveProps 属性改变调用</li>
+<li>shouldComponentUpdate 判断是否需要重新渲染</li>
+<li>render 返回组件树. 必须设置</li>
+<li>componentDidUpdate 渲染到 dom 树中是调用, 可用于获取原生节点</li>
+</ul>
+<h3 id="t184.4 销毁组件">4.4 销毁组件 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t184.4 销毁组件"> # </a></h3>
+<ul>
+<li>componentWillUnmount 组件从 dom 销毁前调用</li>
+</ul>
+<h3 id="t194.5 示例诠释组件全生命周期">4.5 示例诠释组件全生命周期 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t194.5 示例诠释组件全生命周期"> # </a></h3>
+<pre><code>import React, { Component } from 'react';
+
+class LifeCycle extends Component {
+
+  Props = {
+    value: '开始渲染'
+  }
+
+  componentWillReceiveProps(nextProps){
+    console.log('componentWillReceiveProps');
+    this.setState({
+        value: nextProps.value
+    });
+  }
+
+  shouldComponentUpdate(nextProps,nextState){
+    console.log('shouldComponentUpdate');
+    return true;
+  }
+
+  componentWillUpdate(nextProps,nextState){
+    console.log('componentWillUpdate');
+  }
+
+  componentWillMount(){
+    console.log('componentWillMount');
+  }
+
+  render() {
+    console.log('render');
+    return &lt;span&gt;{this.props.value}&lt;/span&gt;
+  }
+
+  componentDidMount() {
+      console.log('componentDidMount');
+  }
+
+  componentDidUpdate(prevProps,prevState) {
+      console.log('componentDidUpdate');
+  }
+
+  componentWillUnmount(prevProps,prevState) {
+      console.log('componentWillUnmount');
+  }
+}
+
+export default LifeCycle;
+</code></pre><p>调用组件并销毁组件示例</p>
+<pre><code>import React, { Component } from 'react';
+import LifeCycleDemo from './LifeCycleDemo';
+
+class DestroyComponent extends Component {
+
+  state = {
+    value:1,
+    destroyed:false
+  }
+
+  increase = () =&gt; {
+    this.setState({
+      value: this.state.value + 1
+    });
+  }
+
+  destroy = () =&gt; {
+    this.setState({
+      destroyed: true
+    });
+  }
+
+  render() {
+    if(this.state.destroyed){
+        return null;
+    }
+
+    return &lt;div&gt;
+      &lt;p&gt;
+        &lt;button onClick={this.increase}&gt;每次加1&lt;/button&gt;
+        &lt;button onClick={this.destroy}&gt;干掉这两个按钮&lt;/button&gt;
+      &lt;/p&gt;
+      &lt;LifeCycleDemo value={this.state.value}/&gt;
+    &lt;/div&gt;;
+  }
+}
+
+export default DestroyComponent;
+</code></pre><h3 id="t204.6 回顾组件的渲染过程">4.6 回顾组件的渲染过程 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t204.6 回顾组件的渲染过程"> # </a></h3>
+<pre><code># 创建-》渲染-》销毁
+
+getDefaultProps()
+getInitialState()
+componentWillMount()
+render()
+componentDidMount()
+componentWillUnmount()
+
+# 更新组件
+
+componentWillReceiveProps()
+shouldComponentUpdate()
+componentWillUpdate()
+render()
+componentDidUpdate()
+</code></pre><h2 id="t215. 使用ref对操作DOM">5. 使用ref对操作DOM <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t215. 使用ref对操作DOM"> # </a></h2>
+<ul>
+<li>ReactDOM.findDOMNode</li>
+<li>this.refs.xxx</li>
+</ul>
+<p>获取DOM后可以方便结合现有非 react 类库的使用，通过 ref/refs 可以取得组件实例，进而取得原生节点，不过尽量通过 state/props 更新组件，不要使用该功能去更新组件的DOM。</p>
+<pre><code>import React, { Component } from 'react';
+import ReactDOM, { findDOMNode } from 'react-dom';
+
+class HandleDOMComponent extends Component {
+  componentDidMount(){
+    // 两种方式都可以获取到元素
+    let ele = findDOMNode(this.refs.content);
+    let ele2 = this.refs.content;
+
+    // 如果想用 jquery，那么这是个好时机
+    console.log( ele );
+    console.log( ele.innerHTML );
+    console.log( ele2.innerHTML );
+
+  }
+
+  render(){
+    return (
+      &lt;div&gt;
+        &lt;h3&gt;来吧，一起操作DOM&lt;/h3&gt;
+        &lt;div ref='content'&gt;这是我DOM元素里面的内容&lt;/div&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default HandleDOMComponent;
+</code></pre><p>再看一个有趣的例子</p>
+<pre><code>import React, { Component } from 'react';
+import { findDOMNode } from 'react-dom';
+
+class Refs extends Component {
+  state = {
+    red: 0,
+    green: 0,
+    pink: 0
+  }
+  update = (e) =&gt; {
+    this.setState({
+      red: findDOMNode(this.refs.red).value,
+      green: findDOMNode(this.refs.green).value,
+      pink: findDOMNode(this.refs.pink).value
+    })
+  }
+  render(){
+    return (
+      &lt;div&gt;
+        &lt;Slider ref="red" update={this.update} /&gt;
+        {this.state.red}
+        &lt;br /&gt;
+        &lt;Slider ref="green" update={this.update} /&gt;
+        {this.state.green}
+        &lt;br /&gt;
+        &lt;Slider ref="pink" update={this.update} /&gt;
+        {this.state.pink}
+      &lt;/div&gt;
+    )
+  }
+}
+
+class Slider extends Component {
+  render(){
+    return (
+        &lt;input type="range"
+          min="0"
+          max="255"
+          onChange={this.props.update} /&gt;
+    )
+  }
+
+}
+
+export default Refs;
+</code></pre><h2 id="t226. 事件event">6. 事件event <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t226. 事件event"> # </a></h2>
+<p>可以通过设置原生 dom 组件的 onEventType 属性来监听 dom 事件，例如 onClick, onMouseDown，在加强组件内聚性的同时，避免了传统 html 的全局变量污染</p>
+<pre><code>'use strict';
+
+import React, { Component } from 'react';
+
+class HandleEvent extends Component {
+
+  state = { liked: false }
+
+  handleClick = (event) =&gt; {
+    this.setState({liked: !this.state.liked});
+  }
+
+  render() {
+    let text = this.state.liked ? '喜欢' : '不喜欢';
+
+    return (
+      &lt;p onClick={this.handleClick}&gt;
+        我 {text} 你.
+      &lt;/p&gt;
+    );
+  }
+}
+
+export default HandleEvent;
+</code></pre><p><strong>注意：事件回调函数参数为标准化的事件对象，可以不用考虑 IE</strong></p>
+<p>更多事件我们可以一起看<a href="http://reactjs.cn/react/docs/events.html#form-events">这里</a></p>
+<h2 id="t237. 组件的组合">7. 组件的组合 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t237. 组件的组合"> # </a></h2>
+<h3 id="t247.1 受限组件 &amp;&amp; 非受限组件">7.1 受限组件 &amp;&amp; 非受限组件 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t247.1 受限组件 &amp;&amp; 非受限组件"> # </a></h3>
+<p>受限组件示例：</p>
+<pre><code>render() {
+  return &lt;input type="text" value="Hello!" /&gt;;
+}
+</code></pre><p>非受限组件示例：</p>
+<pre><code>render() {
+  return &lt;input type="text" /&gt;;
+}
+</code></pre><h3 id="t257.2 使用自定义的组件">7.2 使用自定义的组件 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t257.2 使用自定义的组件"> # </a></h3>
+<pre><code>'use strict';
+
+import React, { Component } from 'react';
+
+class ComponentA extends Component {
+  render() {
+    return &lt;a href='#'&gt;我是组件A&lt;br/&gt;&lt;/a&gt;
+  }
+}
+
+class ComponentB extends Component {
+  render() {
+    return &lt;a href='#'&gt;我是组件B&lt;/a&gt;
+  }
+}
+
+
+class SelfCreateComponent extends Component {
+  render() {
+    return (
+      &lt;i&gt;
+        &lt;ComponentA /&gt;
+        &lt;ComponentB /&gt;
+      &lt;/i&gt;
+    );
+  }
+}
+
+export default SelfCreateComponent;
+</code></pre><h3 id="t267.3 组合 CHILDREN">7.3 组合 CHILDREN <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t267.3 组合 CHILDREN"> # </a></h3>
+<p>自定义组件中可以通过 this.props.children 访问自定义组件的子节点</p>
+<pre><code>'use strict';
+
+import React, { Component } from 'react';
+
+// 定义一个组件，通过React.Children 拿到组件里面的子元素
+class ListComponent extends Component {
+  render(){
+    return &lt;ul&gt;
+      {
+        React.Children.map( this.props.children, function(c){
+          return &lt;li&gt;{c}&lt;/li&gt;;
+        })
+      }
+    &lt;/ul&gt;
+  }
+}
+
+class UseChildrenComponent extends Component {
+  render(){
+    return (
+      &lt;ListComponent&gt;
+        &lt;a href="#"&gt;Facebook&lt;/a&gt;
+        &lt;a href="#"&gt;Google&lt;/a&gt;
+        &lt;a href="#"&gt;SpaceX&lt;/a&gt;
+      &lt;/ListComponent&gt;
+    )
+  }
+}
+
+export default UseChildrenComponent;
+</code></pre><h2 id="t278. form表单操作">8. form表单操作 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t278. form表单操作"> # </a></h2>
+<h3 id="t288.1 React表单组件和 html 的不同点">8.1 React表单组件和 html 的不同点 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t288.1 React表单组件和 html 的不同点"> # </a></h3>
+<ul>
+<li>value/checked 属性设置后，用户输入无效</li>
+<li>textarea 的值要设置在 value 属性<pre><code>&lt;textarea name="description" value="This is a description." /&gt;
+</code></pre></li>
+<li>select 的 value 属性可以是数组，不建议使用 option 的 selected 属性<pre><code>&lt;select multiple={true} value={['B', 'C']}&gt;
+ &lt;option value="A"&gt;Apple&lt;/option&gt;
+ &lt;option value="B"&gt;Banana&lt;/option&gt;
+ &lt;option value="C"&gt;Cranberry&lt;/option&gt;
+&lt;/select&gt;
+</code></pre></li>
+<li>input/textarea 的 onChange 用户每次输入都会触发（即使不失去焦点）</li>
+<li>radio/checkbox/option 点击后触发 onChange</li>
+</ul>
+<h3 id="t298.2 综合表达组件示例">8.2 综合表达组件示例 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t298.2 综合表达组件示例"> # </a></h3>
+<p>1.定义复选框组件Checkboxes</p>
+<pre><code>import React, { Component } from 'react';
+
+class Checkboxes extends Component {
+  render(){
+      return &lt;span&gt;
+          A
+          &lt;input onChange={this.props.handleCheck}  name="goodCheckbox" type="checkbox" value="A"/&gt;
+          B
+          &lt;input onChange={this.props.handleCheck} name="goodCheckbox" type="checkbox" value="B" /&gt;
+          C
+          &lt;input onChange={this.props.handleCheck} name="goodCheckbox" type="checkbox" value="C" /&gt;
+      &lt;/span&gt;
+  }
+}
+
+export default Checkboxes;
+</code></pre><p>2.定义单选框按钮组RadioButtons</p>
+<pre><code>
+import React, { Component } from 'react';
+
+class RadioButtons extends Component {
+  saySomething(){
+      alert("我是一个很棒的单选框按钮组");
+  }
+  render(){
+      return &lt;span&gt;
+          A
+          &lt;input onChange={this.props.handleRadio} name="goodRadio" type="radio" value="A"/&gt;
+          B
+          &lt;input onChange={this.props.handleRadio} name="goodRadio" type="radio" defaultChecked value="B"/&gt;
+          C
+          &lt;input onChange={this.props.handleRadio} name="goodRadio" type="radio" value="C"/&gt;
+      &lt;/span&gt;
+  }
+}
+
+export default RadioButtons;
+</code></pre><p>3.FormApp组件集成两个组件并处理表单逻辑</p>
+<pre><code>'use strict';
+
+import React, { Component } from 'react';
+import Checkboxes from './Checkboxes';
+import RadioButtons from './RadioButtons';
+
+class FormApp extends Component {
+
+  state = {
+      inputValue: '请输入...',
+      selectValue: 'A',
+      radioValue:'B',
+      checkValues:[],
+      textareaValue:'请输入...'
+  }
+
+  handleSubmit = (e) =&gt; {
+      e.preventDefault();
+
+      let formData = {
+          input: this.refs.goodInput.value,
+          select: this.refs.goodSelect.value,
+          textarea: this.refs.goodTextarea.value,
+          radio: this.state.radioValue,
+          check: this.state.checkValues,
+      }
+
+      alert('您即将提交表单')
+      console.log('你提交的数据是:')
+      console.log(formData);
+
+  }
+
+  handleRadio = (e) =&gt; {
+      this.setState({
+          radioValue: e.target.value,
+      })
+  }
+
+  handleCheck = (e) =&gt; {
+      let checkValues = this.state.checkValues.slice();
+      let newVal = e.target.value;
+      let index = checkValues.indexOf(newVal);
+
+      if( index == -1 ){
+          checkValues.push( newVal )
+      }else{
+          checkValues.splice(index,1);
+      }
+
+      this.setState({
+          checkValues: checkValues,
+      })
+  }
+
+  render(){
+      return &lt;form onSubmit={this.handleSubmit}&gt;
+          &lt;h3&gt; 请输入内容 &lt;/h3&gt;
+          &lt;input ref="goodInput" type="text" defaultValue={this.state.inputValue }/&gt;
+          &lt;br/&gt;
+
+          &lt;h3&gt; 请选择 &lt;/h3&gt;
+          &lt;select defaultValue={ this.state.selectValue } ref="goodSelect"&gt;
+              &lt;option value="A"&gt;A&lt;/option&gt;
+              &lt;option value="B"&gt;B&lt;/option&gt;
+              &lt;option value="C"&gt;C&lt;/option&gt;
+              &lt;option value="D"&gt;D&lt;/option&gt;
+              &lt;option value="E"&gt;E&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;br/&gt;
+
+          &lt;h3&gt; 单项选择 &lt;/h3&gt;
+          &lt;RadioButtons ref="goodRadio" handleRadio={this.handleRadio} /&gt;
+          &lt;br/&gt;
+
+          &lt;h3&gt; 多选按钮 &lt;/h3&gt;
+          &lt;Checkboxes handleCheck={this.handleCheck} /&gt;
+          &lt;br/&gt;
+
+          &lt;h3&gt; 反馈建议 &lt;/h3&gt;
+          &lt;textarea defaultValue={this.state.textareaValue} ref="goodTextarea"&gt;&lt;/textarea&gt;
+          &lt;br/&gt;
+
+          &lt;button type="submit"&gt;确认提交&lt;/button&gt;
+      &lt;/form&gt;
+  }
+}
+
+export default FormApp;
+</code></pre><h2 id="t309. mixin共享">9. mixin共享 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t309. mixin共享"> # </a></h2>
+<p>mixin 是一个普通对象，通过 mixin 可以在不同组件间共享代码，使你的React程序变得更为可重用。</p>
+<p>注意，ES6语法不支持mixin写法，而是可以通过decorator去实现代码共享，这里使用ES5语法做示例说明。</p>
+<pre><code>
+import React from 'react';
+
+var SetIntervalMixin = {
+  componentWillMount: function() {
+    this.intervals = [];
+  },
+  setInterval: function() {
+    this.intervals.push(setInterval.apply(null, arguments));
+  },
+  componentWillUnmount: function() {
+    this.intervals.forEach(clearInterval);
+  }
+};
+
+var MixinDemo = React.createClass({
+  // Use the mixin
+  mixins: [SetIntervalMixin],
+  getInitialState: function() {
+    return {seconds: 0};
+  },
+  componentDidMount: function() {
+    // Call a method on the mixin
+    this.setInterval(this.tick, 1000);
+  },
+  tick: function() {
+    this.setState({seconds: this.state.seconds + 1});
+  },
+  render: function() {
+    return (
+      &lt;p&gt;
+        计时器已经运行了： {this.state.seconds} 秒.
+      &lt;/p&gt;
+    );
+  }
+});
+
+export default MixinDemo;
+</code></pre><p>那么，接下来，我们用high-order component的方式来实现mixin：</p>
+<pre><code>import React, { Component } from 'react';
+
+let Mixin = MixinComponent =&gt; class extends Component {
+  constructor() {
+    super();
+    this.state = { val: 0 };
+    this.update = this.update.bind(this);
+  }
+  update(){
+    this.setState({val: this.state.val + 1});
+  }
+  componentWillMount(){
+    console.log('will mount...')
+  }
+  render(){
+    return (
+      &lt;MixinComponent
+        update={this.update}
+        {...this.state}
+        {...this.props}
+       /&gt;
+    )
+  }
+  componentDidMount(){
+    console.log('mounted...')
+  }
+}
+
+const Button = (props) =&gt; {
+  return (
+    &lt;button onClick={props.update}&gt;
+      {props.txt} - {props.val}
+    &lt;/button&gt;
+  )
+}
+
+const Label = (props) =&gt; {
+  return (
+    &lt;label onMouseMove={props.update}&gt;
+      {props.txt} - {props.val}
+    &lt;/label&gt;
+  )
+}
+
+let ButtonMixed = Mixin(Button);
+let LabelMixed = Mixin(Label);
+
+class Mixins extends Component {
+  render(){
+    return (
+      &lt;div&gt;
+        &lt;ButtonMixed txt="button" /&gt;
+        &lt;LabelMixed txt="label" /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default Mixins;
+</code></pre><h2 id="t31基础部分完结寄语">基础部分完结寄语 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html#t31基础部分完结寄语"> # </a></h2>
+<p>总结起来，学习的难度不高，以上内容掌握后，基本能够进行React的开发，后续我们继续相关内容的讲解，内容预告：一步步教你如何用React写一个简单完整的应用功能。</p>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+
+
+</body></html>

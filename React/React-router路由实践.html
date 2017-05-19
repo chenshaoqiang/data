@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- saved from url=(0134)http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOFFE</title>
+        
+    <link rel="stylesheet" type="text/css" href="./React-router路由实践_files/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                YOFFE
+            
+        </div>
+        <input type="checkbox" id="idoc_nav">
+        <div class="menu_tree">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/index.html">首页</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#"><span></span>React课程专题</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.html">React学习指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB.html">React技术分享</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html">React编码规范</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">React基础知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%B8%80%E6%AD%A5%E6%AD%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E5%BA%94%E7%94%A8.html">一步步搭建一个评论应用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/github-notetaker%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91.html">github-notetaker应用开发</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-AJAX%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html">React-AJAX的最佳实践</a></li><li class="active"><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html">React-router路由实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E9%AB%98%E7%BA%A7%E7%A0%94%E8%AE%A8%E8%AF%BE%E5%A4%A7%E7%BA%B2.html">React高级研讨课大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Babel%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">Babel使用指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%85%A8%E6%A0%88Redux%E5%AE%9E%E6%88%98.html">全栈Redux实战</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html">Redux快速上手</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E8%B6%85%E9%85%B7%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Redux-Devtools.html">Redux超酷的开发工具Redux-Devtools</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Redux%E7%9A%84Middleware.html">深入理解Redux的Middleware</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/JavaScript%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B.html">JavaScript函数式编程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E7%BB%84%E4%BB%B6%E6%B5%8B%E8%AF%95.html">组件测试</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建开发态工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html">Webpack基础</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建生产环境工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%BF%AB%E9%80%9F%E6%90%9E%E5%AE%9A%E5%B8%B8%E7%94%A8%E7%9A%84ES6%E6%96%B0%E7%89%B9%E6%80%A7.html">快速搞定常用的ES6新特性</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#"><span></span>前沿观察</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/ECMAScript%206%E5%85%A5%E9%97%A8.html">ECMAScript 6入门</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Immutable%E8%AF%A6%E8%A7%A3%E5%8F%8AReact%E4%B8%AD%E5%AE%9E%E8%B7%B5.html">Immutable详解及React中实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Node.js%20MVC%E6%A1%86%E6%9E%B6ThinkJS.html">Node.js MVC框架ThinkJS</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Nodejs%205.0.0%E7%89%88%E6%9C%AC.html">Nodejs 5.0.0版本</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93PostgreSQL.html">关系型数据库PostgreSQL</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E8%BD%BB%E5%9E%8BMVVM%E6%A1%86%E6%9E%B6Vue.js.html">轻型MVVM框架Vue.js</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%9F%BA%E4%BA%8Enodejs%E7%9A%84%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6koa.html">基于nodejs的开发框架koa</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#"><span></span>前端工程化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E6%A8%A1%E6%9D%BF.html">前端模板</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%92%8C%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87.html">性能优化和前端工程的爱恨情仇</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/webpack%E5%85%A5%E9%97%A8%E5%8F%8A%E5%AE%9E%E8%B7%B5.html">webpack入门及实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E4%B8%8D%E5%AE%8C%E5%85%A8%E8%A3%85%E9%80%BC%E6%8C%87%E5%8D%97.html">前端工程化不完全装逼指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#"><span></span>性能优化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B.html">jshint代码质量检测</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.html">jshint配置说明</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/NC%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html">NC性能优化</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9.html">性能优化待办事项</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%82%B9%E6%80%BB%E7%BB%93.html">性能优化点总结</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#"><span></span>技术分享</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0Git.html">学习Git</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html">面向对象</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Node.js%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">Node.js知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/2015%E5%B9%B4%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html">2015年大前端技术年终总结</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Nodejs%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">Nodejs环境配置</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/NPM%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">NPM的使用方法</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%9F%BA%E6%9C%ACSHELL%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.html">基本SHELL命令使用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Git%E5%92%8CGithub%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html">Git和Github快速入门指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#"><span></span>团队</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C%E6%8C%87%E5%8D%97.html">新员工入职指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%A4%A7%E7%BA%B2.html">笔试面试大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88%E8%A7%84%E5%88%92.html">项目技术栈规划</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B.html">React组件开发过程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0.html">前端技术平台</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/CONTACT.html">CONTACT</a></li></ul>    
+        </div>
+        
+        
+        <div class="forkgithub"><a target="_blank" href="https://github.com/GuoYongfeng">fork on github</a></div>
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t0React-router路由实践">React-router路由实践</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t11. Router,hashHistory,Route">1. Router,hashHistory,Route</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t22. Link">2. Link</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t33. browserHistory">3. browserHistory</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t44. activeStyle,activeClassName">4. activeStyle,activeClassName</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t55. 路由嵌套">5. 路由嵌套</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t66. IndexRoute">6. IndexRoute</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t77. 路由变量">7. 路由变量</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t88. Route中components参数的高级用法">8. Route中components参数的高级用法</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t99. 使用query获取URL中的参数">9. 使用query获取URL中的参数</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t1010. Redirect重定向">10. Redirect重定向</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t1111. setRouteLeaveHook路由钩子函数：处理路由切换时的操作">11. setRouteLeaveHook路由钩子函数：处理路由切换时的操作</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t12结语">结语</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t13参考资料">参考资料</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0React-router路由实践">React-router路由实践 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t0React-router路由实践"> # </a></h1>
+<blockquote>
+<p>按照惯例：以下操作前先下载并启动脚手架项目：<a href="https://github.com/GuoYongfeng/webpack-dev-boilerplate">https://github.com/GuoYongfeng/webpack-dev-boilerplate</a></p>
+</blockquote>
+<h2 id="t11. Router,hashHistory,Route">1. Router,hashHistory,Route <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t11. Router,hashHistory,Route"> # </a></h2>
+<p>首先下载react-router</p>
+<pre><code>$ npm install react-router --save
+</code></pre><p>需要注意的是，react-router更新很快，API也在持续升级，也许你看到市面很多教程，但可能那还是1.x甚至是0.x版本的。</p>
+<p>我们首先在App.jsx写一个简单示例，让你快速的对react-router有印象。</p>
+<p>代码清单：<code>app/container/App/App.jsx</code></p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory } from 'react-router';
+
+const Home = () =&gt; &lt;div&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;/div&gt;;
+const About = () =&gt; &lt;div&gt;&lt;h1&gt;About&lt;/h1&gt;&lt;/div&gt;;
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;/div&gt;;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t22. Link">2. Link <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t22. Link"> # </a></h2>
+<p>Link是react-router提供的导航组件，可以直接使用进行路由切换</p>
+<p>代码清单：<code>app/container/App/App.jsx</code></p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory, Link } from 'react-router';
+
+const Home = () =&gt; &lt;div&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const About = () =&gt; &lt;div&gt;&lt;h1&gt;About&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link to="/about"&gt;About&lt;/Link&gt;
+    &lt;Link to="/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t33. browserHistory">3. browserHistory <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t33. browserHistory"> # </a></h2>
+<p>browserHistory和hashHistory不一样，使用browserHistory的时候，浏览器中导航栏的URL就不会出现_k的hash键值对。实际项目中也一般用browserHistory.</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, browserHistory, Link } from 'react-router';
+
+const Home = () =&gt; &lt;div&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const About = () =&gt; &lt;div&gt;&lt;h1&gt;About&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link to="/about"&gt;About&lt;/Link&gt;
+    &lt;Link to="/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={browserHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><p>这样正常点击路由切换没有问题，但是重新刷新URL就会报找不到路由，这个时候我们在webpack-dev-server启动的时候需要加上参数<code>--history-api-fallback</code>。</p>
+<h2 id="t44. activeStyle,activeClassName">4. activeStyle,activeClassName <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t44. activeStyle,activeClassName"> # </a></h2>
+<p>当前路由被点击处于触发显示状态的时候，我们可以使用activeStyle来给路由设置一些颜色。</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, browserHistory, Link } from 'react-router';
+
+const Home = () =&gt; &lt;div&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const About = () =&gt; &lt;div&gt;&lt;h1&gt;About&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link activeStyle={{color: 'red'}} to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link activeStyle={{color: 'red'}} to="/about"&gt;About&lt;/Link&gt;
+    &lt;Link activeStyle={{color: 'red'}} to="/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={browserHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><p>同理，我们还可以使用activeClassName来将路由激活状态的样式抽取出来。</p>
+<p>我们在App.css写一个样式，代码清单：<code>app/containers/App/App.jsx</code></p>
+<pre><code>.active {
+  color: red;
+}
+</code></pre><p>然后修改App.jsx</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, browserHistory, Link } from 'react-router';
+
+import './App.css';
+
+const Home = () =&gt; &lt;div&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const About = () =&gt; &lt;div&gt;&lt;h1&gt;About&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link activeClassName="active" to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link activeClassName="active" to="/about"&gt;About&lt;/Link&gt;
+    &lt;Link activeClassName="active" to="/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={browserHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t55. 路由嵌套">5. 路由嵌套 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t55. 路由嵌套"> # </a></h2>
+<p>刚才讲的是简单路由的切换，但实际应用中，路由是分多个层级的。幸运的是，我们可以使用react-router的路由嵌套来清晰的管理路由和组件之间的切换展示。</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, browserHistory, Link } from 'react-router';
+
+import './App.css';
+
+const Home = (props) =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Home&lt;/h1&gt;
+    &lt;Links /&gt;
+    {props.children}
+  &lt;/div&gt;
+
+const About = (props) =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;About&lt;/h1&gt;
+    {props.children}
+  &lt;/div&gt;
+
+const Contact = () =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Contact&lt;/h1&gt;
+  &lt;/div&gt;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link activeClassName="active" to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link activeClassName="active" to="/about"&gt;About&lt;/Link&gt;
+    &lt;Link activeClassName="active" to="/about/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={browserHistory}&gt;
+        &lt;Route path="/" component={Home}&gt;
+          &lt;Route path="about" component={About}&gt;
+            &lt;Route path="contact" component={Contact} /&gt;
+          &lt;/Route&gt;
+        &lt;/Route&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t66. IndexRoute">6. IndexRoute <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t66. IndexRoute"> # </a></h2>
+<p>IndexRoute即处理页面初始进入时候的组件展示，等路由切换的时候，再根据其他路由规则进行组件的切换展示。</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, browserHistory, Link, IndexRoute } from 'react-router';
+
+import './App.css';
+
+const Home = (props) =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Home&lt;/h1&gt;
+    &lt;Links /&gt;
+    {props.children}
+  &lt;/div&gt;
+
+const About = () =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;About&lt;/h1&gt;
+  &lt;/div&gt;
+
+const Contact = () =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Contact&lt;/h1&gt;
+  &lt;/div&gt;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link activeClassName="active" to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link activeClassName="active" to="/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={browserHistory}&gt;
+        &lt;Route path="/" component={Home}&gt;
+          &lt;IndexRoute component={About} /&gt;
+          &lt;Route path="contact" component={Contact} /&gt;
+        &lt;/Route&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t77. 路由变量">7. 路由变量 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t77. 路由变量"> # </a></h2>
+<p>刚才展示的是常规的路由，路由中的规则是给定的，现在我们尝试使用路由变量，在组件中获取这个路由的变量，并做相应的组件展示。</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory, Link, IndexRoute } from 'react-router';
+
+import './App.css';
+
+const Message = (props) =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;{props.params.message || 'Hello'}&lt;/h1&gt;
+    &lt;Links /&gt;
+  &lt;/div&gt;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to="/"&gt;Hello&lt;/Link&gt;
+    &lt;Link to="/yong"&gt;Yong&lt;/Link&gt;
+    &lt;Link to="/feng"&gt;Feng&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/(:message)" component={Message} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t88. Route中components参数的高级用法">8. Route中components参数的高级用法 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t88. Route中components参数的高级用法"> # </a></h2>
+<p>Route中components中接收的参数不仅仅只是实际的组件，还可以是对象，通过这样的用法，我们可以更灵活的控制组件的展示。</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory, Link, IndexRoute } from 'react-router';
+
+import './App.css';
+
+const HomeHeader = () =&gt; &lt;h1&gt;HomeHeader&lt;/h1&gt;
+const HomeBody = () =&gt; &lt;h1&gt;HomeBody&lt;/h1&gt;
+const AboutHeader = () =&gt; &lt;h1&gt;AboutHeader&lt;/h1&gt;
+const AboutBody = () =&gt; &lt;h1&gt;AboutBody&lt;/h1&gt;
+
+const Container = (props) =&gt;
+  &lt;div&gt;
+    {props.header}
+    {props.body}
+    &lt;Links /&gt;
+  &lt;/div&gt;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to="/"&gt;Hello&lt;/Link&gt;
+    &lt;Link to="/about"&gt;About&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Container}&gt;
+          &lt;IndexRoute components={{ header:HomeHeader, body:HomeBody }} /&gt;
+          &lt;Route path="about" components={{ header:AboutHeader, body:AboutBody }} /&gt;
+        &lt;/Route&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t99. 使用query获取URL中的参数">9. 使用query获取URL中的参数 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t99. 使用query获取URL中的参数"> # </a></h2>
+<p>我们可以将URL中访问的参数获取，并且应用到组件中。</p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory, Link, IndexRoute } from 'react-router';
+
+import './App.css';
+
+const Page = (props) =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;{props.location.query.message || 'Hello'}&lt;/h1&gt;
+  &lt;/div&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Page} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><p>然后在url中输入<code>http://localhost:8080/#/?message=guoyongfeng</code>，页面中就会显示<code>guoyongfeng</code>。</p>
+<p><strong>另外，我们还可以在Link组件中设置pathname和query变量</strong></p>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory, Link, IndexRoute } from 'react-router';
+
+import './App.css';
+
+const Page = (props) =&gt;
+  &lt;div&gt;
+    &lt;h1&gt;{props.location.query.message || 'Hello'}&lt;/h1&gt;
+  &lt;/div&gt;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to={{ pathname: "/", query: {message: "guoyongfeng"} }} /&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Page} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t1010. Redirect重定向">10. Redirect重定向 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t1010. Redirect重定向"> # </a></h2>
+<pre><code>import React, { Component } from 'react';
+import { Router, Route, hashHistory, Link, Redirect } from 'react-router';
+
+const Home = () =&gt; &lt;div&gt;&lt;h1&gt;Home&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const About = () =&gt; &lt;div&gt;&lt;h1&gt;About&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link to="/about"&gt;About&lt;/Link&gt;
+    &lt;Link to="/contact"&gt;Contact&lt;/Link&gt;
+    &lt;Link to="/contact-us"&gt;Contact US&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/about" component={About} /&gt;
+        &lt;Route path="/contact-us" component={Contact} /&gt;
+        &lt;Redirect from="/contact" to="/contact-us" /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t1111. setRouteLeaveHook路由钩子函数：处理路由切换时的操作">11. setRouteLeaveHook路由钩子函数：处理路由切换时的操作 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t1111. setRouteLeaveHook路由钩子函数：处理路由切换时的操作"> # </a></h2>
+<pre><code>import React, { Component, PropTypes } from 'react';
+import { Router, Route, hashHistory, Link } from 'react-router';
+
+class Home extends Component {
+  componentWillMount(){
+    this.context.router.setRouteLeaveHook(
+      this.props.route,
+      this.routerWillLeave
+    )
+  }
+  routerWillLeave( nextLocation ){
+    return `页面即将从Home切换到${nextLocation.pathname}`
+  }
+  render(){
+    return &lt;div&gt;
+      &lt;h1&gt;Home&lt;/h1&gt;
+      &lt;Links /&gt;
+    &lt;/div&gt;
+  }
+}
+
+Home.contextTypes = {
+  router: PropTypes.object.isRequired
+};
+
+const Contact = () =&gt; &lt;div&gt;&lt;h1&gt;Contact&lt;/h1&gt;&lt;Links /&gt;&lt;/div&gt;;
+
+const Links = () =&gt;
+  &lt;nav&gt;
+    &lt;Link to="/"&gt;Home&lt;/Link&gt;
+    &lt;Link to="/contact"&gt;Contact&lt;/Link&gt;
+  &lt;/nav&gt;
+
+class App extends Component {
+  render() {
+    return (
+      &lt;Router history={hashHistory}&gt;
+        &lt;Route path="/" component={Home} /&gt;
+        &lt;Route path="/contact" component={Contact} /&gt;
+      &lt;/Router&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><h2 id="t12结语">结语 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t12结语"> # </a></h2>
+<p>总的来说，react-router的学习难度不高，但是会有不同版本间API升级的坑，后续大家持续关注，或是使用某一个自己熟悉的react-router版本。</p>
+<h2 id="t13参考资料">参考资料 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html#t13参考资料"> # </a></h2>
+<ul>
+<li><a href="https://github.com/react-guide/react-router-cn">react-router-cn</a></li>
+<li><a href="http://react-guide.github.io/react-router-cn/index.html">React Router 中文文档</a></li>
+<li><a href="https://github.com/reactjs/react-router">react-router on github</a></li>
+<li><a href="https://github.com/reactjs/react-router-tutorial">react-router-tutorial</a></li>
+</ul>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+
+
+</body></html>
