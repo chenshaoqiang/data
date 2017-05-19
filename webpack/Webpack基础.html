@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOFFE</title>
+        
+    <link rel="stylesheet" type="text/css" href="./Webpack基础_files/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                YOFFE
+            
+        </div>
+        <input type="checkbox" id="idoc_nav">
+        <div class="menu_tree">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/index.html">首页</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#"><span></span>React课程专题</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.html">React学习指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB.html">React技术分享</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html">React编码规范</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">React基础知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%B8%80%E6%AD%A5%E6%AD%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E5%BA%94%E7%94%A8.html">一步步搭建一个评论应用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/github-notetaker%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91.html">github-notetaker应用开发</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-AJAX%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html">React-AJAX的最佳实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html">React-router路由实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E9%AB%98%E7%BA%A7%E7%A0%94%E8%AE%A8%E8%AF%BE%E5%A4%A7%E7%BA%B2.html">React高级研讨课大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Babel%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">Babel使用指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%85%A8%E6%A0%88Redux%E5%AE%9E%E6%88%98.html">全栈Redux实战</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html">Redux快速上手</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E8%B6%85%E9%85%B7%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Redux-Devtools.html">Redux超酷的开发工具Redux-Devtools</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Redux%E7%9A%84Middleware.html">深入理解Redux的Middleware</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/JavaScript%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B.html">JavaScript函数式编程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E7%BB%84%E4%BB%B6%E6%B5%8B%E8%AF%95.html">组件测试</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建开发态工作流</a></li><li class="active"><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html">Webpack基础</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建生产环境工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%BF%AB%E9%80%9F%E6%90%9E%E5%AE%9A%E5%B8%B8%E7%94%A8%E7%9A%84ES6%E6%96%B0%E7%89%B9%E6%80%A7.html">快速搞定常用的ES6新特性</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#"><span></span>前沿观察</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/ECMAScript%206%E5%85%A5%E9%97%A8.html">ECMAScript 6入门</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Immutable%E8%AF%A6%E8%A7%A3%E5%8F%8AReact%E4%B8%AD%E5%AE%9E%E8%B7%B5.html">Immutable详解及React中实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Node.js%20MVC%E6%A1%86%E6%9E%B6ThinkJS.html">Node.js MVC框架ThinkJS</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Nodejs%205.0.0%E7%89%88%E6%9C%AC.html">Nodejs 5.0.0版本</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93PostgreSQL.html">关系型数据库PostgreSQL</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E8%BD%BB%E5%9E%8BMVVM%E6%A1%86%E6%9E%B6Vue.js.html">轻型MVVM框架Vue.js</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%9F%BA%E4%BA%8Enodejs%E7%9A%84%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6koa.html">基于nodejs的开发框架koa</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#"><span></span>前端工程化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E6%A8%A1%E6%9D%BF.html">前端模板</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%92%8C%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87.html">性能优化和前端工程的爱恨情仇</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/webpack%E5%85%A5%E9%97%A8%E5%8F%8A%E5%AE%9E%E8%B7%B5.html">webpack入门及实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E4%B8%8D%E5%AE%8C%E5%85%A8%E8%A3%85%E9%80%BC%E6%8C%87%E5%8D%97.html">前端工程化不完全装逼指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#"><span></span>性能优化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B.html">jshint代码质量检测</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.html">jshint配置说明</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/NC%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html">NC性能优化</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9.html">性能优化待办事项</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%82%B9%E6%80%BB%E7%BB%93.html">性能优化点总结</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#"><span></span>技术分享</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0Git.html">学习Git</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html">面向对象</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Node.js%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">Node.js知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/2015%E5%B9%B4%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html">2015年大前端技术年终总结</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Nodejs%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">Nodejs环境配置</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/NPM%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">NPM的使用方法</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%9F%BA%E6%9C%ACSHELL%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.html">基本SHELL命令使用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Git%E5%92%8CGithub%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html">Git和Github快速入门指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#"><span></span>团队</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C%E6%8C%87%E5%8D%97.html">新员工入职指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%A4%A7%E7%BA%B2.html">笔试面试大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88%E8%A7%84%E5%88%92.html">项目技术栈规划</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B.html">React组件开发过程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0.html">前端技术平台</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/CONTACT.html">CONTACT</a></li></ul>    
+        </div>
+        
+        
+        <div class="forkgithub"><a target="_blank" href="https://github.com/GuoYongfeng">fork on github</a></div>
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t0Webpack基础">Webpack基础</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t11.初始化项目">1.初始化项目</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t22.webpack和webpack-dev-server的基本命令">2.webpack和webpack-dev-server的基本命令</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t33.多文件入口">3.多文件入口</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t44.使用Babel-loader来解析es6和jsx">4.使用Babel-loader来解析es6和jsx</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t55.devServer">5.devServer</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t66.resolve">6.resolve</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t77.解析样式文件">7.解析样式文件</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t88.devtool">8.devtool</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t99.图标字体等资源">9.图标字体等资源</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t10未完待续">未完待续</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 style="font-size: 40px;text-align:center;color: #007cdc;" id="t0Webpack基础">Webpack基础 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t0Webpack基础"> # </a></h1>
+
+<p>webpack是一款强大的模块加载器兼打包工具，它能把各种资源，例如JS（含JSX）、coffee、样式（含less/sass）、图片等都作为模块来使用和处理。</p>
+<p><img src="./Webpack基础_files/what-is-webpack.png"></p>
+<p><strong>webpack有什么特别之处</strong></p>
+<ul>
+<li>插件plugins：rich plugins &amp; flexible</li>
+<li>构建性能Performance: async I/O</li>
+<li>加载器Loaders: bundle any static resource</li>
+<li>对模块的支持Support: supports AMD and CommonJs module styles &amp; support most existing libraries.</li>
+<li>代码拆分Code Splitting: split your codebase into chunks</li>
+<li>性能优化Optimizations: can do many optimizations to reduce the output size &amp; handle request caching</li>
+<li>开发者工具Development Tools: SourceMaps &amp; development middleware &amp; development server</li>
+<li>多端适用Multiple targets: web &amp; node.js</li>
+</ul>
+<p>接下来我们将一步步熟悉Webpack的使用，并使用它来搭建一套前端工作流。</p>
+<h2 id="t11.初始化项目">1.初始化项目 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t11.初始化项目"> # </a></h2>
+<p>创建一个项目</p>
+<pre><code>$ mkdir webpack-demos &amp;&amp; cd webpack-demos
+$ git init
+$ touch README.md .gitignore
+$ npm init
+</code></pre><p>编辑.gitignore</p>
+<pre><code>node_modules
+*.log*
+.idea
+</code></pre><p>建立src和build两个目录</p>
+<pre><code># src 目录存放源码，build 目录存放编译打包之后的资源
+$ mkdir src build
+$ cd src &amp;&amp; touch index.js component.js
+$ cd ../build &amp;&amp; touch index.html
+</code></pre><pre><code>/* src/index.js */
+var component = require('./component.js');
+
+component();
+</code></pre><pre><code>/* src/component.js */
+module.exports = function(){
+  alert('component');
+}
+</code></pre><pre><code>/* build/index.html */
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Webpack demos&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="app"&gt;&lt;/div&gt;
+  &lt;script src="bundle.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>下载webpack和webpack-dev-server</p>
+<pre><code># 安装并保存在项目的依赖中
+$ npm install --save-dev webpack webpack-dev-server
+# 如果想直接在命令行使用webpack或webpack-dev-server命令，请全局安装
+$ npm install -g webpack webpack-dev-server
+</code></pre><p>创建webpack的配置文件</p>
+<pre><code>$ touch webpack.config.js
+</code></pre><p><code># 请注意webpack.config.js这个文件命名，默认情况下需要严格按照这个命名，不然会报Output filename not configured的错误；另外，如果不按这个命名，那么在webpack运行的时候通过--conf这个参数指定配置文件，比如：webpack --config conf.js</code></p>
+<p>进行基本配置</p>
+<pre><code>var path = require('path');
+
+module.exports = {
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js'
+    },
+};
+</code></pre><p>执行webpack命令</p>
+<pre><code>$ webpack
+</code></pre><p>可以看到控制台出现如下信息：</p>
+<pre><code>Hash: cf7cc9272c664f542fcb
+Version: webpack 1.13.0
+Time: 80ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  2.04 kB       0  [emitted]  main
+   [0] ./src/index.js 60 bytes {0} [built]
+   [1] ./src/component.js 57 bytes {0} [built]
+    + 1 hidden modules
+</code></pre><p>build目录下也新增了一个bundle.js文件</p>
+<h2 id="t22.webpack和webpack-dev-server的基本命令">2.webpack和webpack-dev-server的基本命令 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t22.webpack和webpack-dev-server的基本命令"> # </a></h2>
+<pre><code>$ webpack --help
+</code></pre><p>执行以上命令，可以在控制台看到很多webpack相关的命令，选取几个常用的介绍下。</p>
+<ul>
+<li><code>webpack</code> 开发环境下编译</li>
+<li><code>webpack -p</code> 产品编译及压缩</li>
+<li><code>webpack --watch</code> 开发环境下持续的监听文件变动来进行编译(非常快!)</li>
+<li><code>webpack -d</code> 引入 source maps</li>
+<li><code>webpack --progress</code> 显示构建进度</li>
+<li><code>webpack --display-error-details</code> 这个很有用，显示打包过程中的出错信息</li>
+<li><code>webpack --profile</code> 输出性能数据，可以看到每一步的耗时</li>
+</ul>
+<p>另外，让我们使用webpack-dev-server来起一个本地服务进行调试：</p>
+<pre><code>$ webpack-dev-server --progress --colors --content-base build
+</code></pre><p>打开<code>localhost:8080</code>，回车即可。</p>
+<p>那么执行webpack-dev-server后面的几个参数是什么意思呢？</p>
+<ul>
+<li><code>webpack-dev-server</code> - 在 localhost:8080 建立一个 Web 服务器</li>
+<li><code>webpack-dev-server --devtool eval</code> - 为你的代码创建源地址。当有任何报错的时候可以让你更加精确地定位到文件和行号</li>
+<li><code>webpack-dev-server --progress</code> - 显示合并代码进度</li>
+<li><code>webpack-dev-server --colors</code> - 命令行中显示颜色</li>
+<li><code>webpack-dev-server --content-base build</code> -  webpack-dev-server服务会默认以当前目录伺服文件，如果设置了content-base的话，服务的根路径则为build目录</li>
+<li><code>webpack-dev-server --inline</code> 可以自动加上dev-server的管理代码，实现热更新</li>
+<li><code>webpack-dev-server --hot</code> 开启代码热替换，可以加上HotModuleReplacementPlugin</li>
+<li><code>webpack-dev-server --port 3000</code> 设置服务端口</li>
+</ul>
+<blockquote>
+<p>关于webpack-dev-server的简单介绍：webpack-dev-server是一个小型的node.js Express服务器,它使用webpack-dev-middleware中间件来为通过webpack打包生成的资源文件提供Web服务。它还有一个通过Socket.IO连接着webpack-dev-server服务器的小型运行时程序。webpack-dev-server发送关于编译状态的消息到客户端，客户端根据消息作出响应。</p>
+</blockquote>
+<h2 id="t33.多文件入口">3.多文件入口 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t33.多文件入口"> # </a></h2>
+<pre><code>$ cd src &amp;&amp; touch entry1.js entry2.js
+</code></pre><pre><code>/* webpack.config.js */
+var path = require('path');
+
+module.exports = {
+    entry: {
+      entry1: './src/entry1.js',
+      entry2: './src/entry2.js',
+    },
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: '[name].js'
+    },
+};
+</code></pre><h2 id="t44.使用Babel-loader来解析es6和jsx">4.使用Babel-loader来解析es6和jsx <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t44.使用Babel-loader来解析es6和jsx"> # </a></h2>
+<p>我们在src/index.js里面尝试写一个最基本的组件代码，暂时不用理会代码为什么要这么写，这里先把ES6语法和JSX语法加进来，用于跑通我们的开发环境，后续会有专题内容来详细讲述。</p>
+<p>代码清单：<code>src/index.js</code></p>
+<pre><code>'use strict';
+
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+class HelloWorld extends Component {
+  render(){
+    return (
+      &lt;h1&gt;Hello world&lt;/h1&gt;
+    )
+  }
+}
+
+ReactDOM.render(&lt;HelloWorld /&gt;, document.getElementById('app'));
+</code></pre><p>ok，我们看到，我们的代码用到了基本的react.js和react-dom.js，而且使用的是ES6的语法来封装的组件和应用模块。</p>
+<p>所以接下来我们要做两件事：</p>
+<ol>
+<li>下载相应的模块：<pre><code>$ npm install --save react react-dom
+</code></pre></li>
+<li>下载并配置babel，以解析ES6语法和JSX语法。</li>
+</ol>
+<p>babel是一款强大的解析器，拥有活跃而且完善的生态，不仅可以做JS相关的各种语法的解析，还提供丰富的插件功能。</p>
+<pre><code>
+$ npm install babel-loader babel-core --save-dev
+</code></pre><p>安装后我们需要配置webapck.config.js文件</p>
+<p>代码清单：<code>webpack.config.js</code></p>
+<pre><code>var path = require('path');
+
+module.exports = {
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js',
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          loader: 'babel-loader'
+        }
+      ]
+    }
+};
+</code></pre><p>这里指定了使用babel-loader来解析js文件，但是并没有告诉babel应该如何来解析，所以我们需要创建一个babelrc配置文件</p>
+<pre><code>$ touch .babelrc
+</code></pre><p>然后编辑babelrc
+代码清单：<code>.babelrc</code></p>
+<pre><code>{
+  "presets": ["es2015", "react", "stage-0"],
+  "plugins": []
+}
+</code></pre><p>为什么配置的是这两个参数，解释一下，配置的preset字段是在为babel解析做预设，告诉babel需要使用相关的预设插件来解析代码，plugins字段，顾名思义，就是用来配置使用babel相关的插件的，这里暂且按下不表。</p>
+<p>这里使用到了三个预设需要下载安装</p>
+<pre><code>$ npm install --save-dev babel-preset-es2015 babel-preset-react babel-preset-stage-0
+// 其中stage-0预设是用来说明解析ES7其中一个阶段语法提案的转码规则
+</code></pre><p>到这里我们可以重新来运行一次webpack以查看效果，为方便运行，我们把webpack-dev-server的相关代码放到package.json的script里面去</p>
+<p>代码清单：<code>package.json</code></p>
+<pre><code>"scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server --progress --colors --content-base build"
+}
+</code></pre><p>好了，开始运行试一下吧</p>
+<pre><code>$ npm run dev
+</code></pre><p>在浏览器中访问：<code>http://localhost:8080/</code></p>
+<h2 id="t55.devServer">5.devServer <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t55.devServer"> # </a></h2>
+<p>刚才我们看到，在运行webpack-dev-server的时候，后面带了一串参数，这里我们可以使用devServer字段统一在webpack.config.js文件里面维护。</p>
+<pre><code>/* webpack.config.js */
+var path = require('path');
+
+module.exports = {
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js',
+    },
+    devServer: {
+      publicPath: "/static/",
+      stats: { colors: true },
+      port: 8080,
+      contentBase: 'build',
+      inline: true
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          loader: 'babel-loader'
+        }
+      ]
+    }
+};
+</code></pre><p>同时，我们可以简化scripts字段的配置了</p>
+<pre><code>"scripts": {
+    "dev": "./node_modules/.bin/webpack-dev-server"
+}
+</code></pre><p>对应的修改index.html文件中的资源引用地址</p>
+<pre><code>&lt;script src="/static/bundle.js"&gt;&lt;/script&gt;
+</code></pre><p>ok, npm run dev即可</p>
+<p>另外，也有同学问到，怎么mock数据呢，我们可以用proxy代理的方式。</p>
+<pre><code>var path = require('path');
+
+function rewriteUrl(replacePath) {
+  return function (req, opt) {
+    var queryIndex = req.url.indexOf('?');
+    var query = queryIndex &gt;= 0 ? req.url.substr(queryIndex) : "";
+
+    req.url = req.path.replace(opt.path, replacePath) + query;
+    console.log("rewriting ", req.originalUrl, req.url);
+  };
+}
+
+module.exports = {
+    entry: {
+      index: "./src/index.js"
+    },
+    output: {
+      publicPath: "/static/",
+      path: path.resolve(__dirname, "build"),
+
+      filename: "bundle.js"
+    },
+    devServer: {
+      publicPath: "/static/",
+      stats: { colors: true },
+      port: 8080,
+      contentBase: 'build',
+      inline: true,
+      proxy: [
+          {
+            path: /^\/api\/(.*)/,
+            target: "http://localhost:8080/",
+            rewrite: rewriteUrl('/$1\.json'),
+            changeOrigin: true
+          }
+      ]
+    },
+
+};
+</code></pre><p>更多请看<a href="http://webpack.github.io/docs/webpack-dev-server.html">这里</a></p>
+<h2 id="t66.resolve">6.resolve <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t66.resolve"> # </a></h2>
+<p>resolve下常用的是extension和alias字段的配置：</p>
+<ul>
+<li>extension 不用在require或是import的时候加文件后缀<pre><code>/* webpack.config.js */
+resolve: {
+  extensions: ["", ".js", ".jsx", ".css", ".json"],
+},
+</code></pre></li>
+</ul>
+<pre><code>/* src/component.js */
+
+export default () =&gt; {
+  alert('component');
+}
+</code></pre><pre><code>/* src/index.js */
+'use strict';
+
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+import component from './component';
+
+component();
+
+class HelloWorld extends Component {
+  render(){
+    return (
+      &lt;h1&gt;Hello world&lt;/h1&gt;
+    )
+  }
+}
+
+ReactDOM.render(&lt;HelloWorld /&gt;, document.getElementById('app'));
+</code></pre><p>刷新看到运行效果，而此时import的时候直接没有写文件后缀。</p>
+<ul>
+<li>alias 配置别名，加快webpack构建的速度</li>
+</ul>
+<pre><code>var path = require('path');
+
+var pathToReact = path.join(__dirname, "./node_modules/react/dist/react.js");
+var pathToReactDOM = path.join(__dirname, "./node_modules/react-dom/dist/react-dom.js");
+
+module.exports = {
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js',
+    },
+    devServer: {
+      publicPath: "/static/",
+      stats: { colors: true },
+      port: 3000,
+      contentBase: 'build',
+      inline: true
+    },
+    resolve: {
+      extensions: ["", ".js", ".jsx", ".css", ".json"],
+      alias: {
+        'react': pathToReact,
+        'react-dom': pathToReactDOM
+      }
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          loader: 'babel-loader'
+        }
+      ],
+      noParse: [pathToReact, pathToReactDOM]
+    }
+};
+</code></pre><p>我们这里做了两件事情：
+1.每当 "react" 在代码中被引入，它会使用压缩后的 React JS 文件，而不是到 node_modules 中找。
+2.每当 Webpack 尝试去解析那个压缩后的文件，我们阻止它，因为这不必要。</p>
+<h2 id="t77.解析样式文件">7.解析样式文件 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t77.解析样式文件"> # </a></h2>
+<p>style-loader css-loader 样式内嵌
+css module 配置?modules
+less-loader；</p>
+<p>前面的大部分工作都在处理JS逻辑的解析和加载，但是我们还一直没有提我们的样式文件应该如何去处理。</p>
+<p>我们在课程中暂且约定使用less预处理器（saas的类似）来写我们项目的样式，那么首先需要下载几个webpack的loader</p>
+<pre><code>$ npm install --save-dev style-loader css-loader less-loader
+</code></pre><p>进行webpack配置。
+代码清单：<code>webpack.config.js</code></p>
+<pre><code>loaders: [
+    {
+      test: /\.js$/,
+      loaders: ['react-hot', 'babel'],
+      exclude: path.resolve(__dirname, 'node_modules')
+    },
+    {
+      test: /\.css/,
+      loader: 'style!css'
+    },
+    {
+      test: /\.less/,
+      loader: 'style!css!less'
+    }
+]
+</code></pre><p>接下来测试一下，在src目录新增一个基本的React组件，然后在index.js中引用这个组件。</p>
+<p>新增一个目录coponents并且在目录下新建一个Button组件</p>
+<pre><code>$ cd src &amp;&amp; mkdir components
+$ cd components &amp;&amp; mkdir Button
+$ cd Button &amp;&amp; touch Button.js Button.less
+</code></pre><p>代码清单：<code>src/components/Button.js</code></p>
+<pre><code>import React, { Component } from 'react';
+
+class Button extends Component {
+  handleClick(){
+    alert('戳我干嘛！');
+  }
+  render(){
+    const style = require('./Button.less');
+
+    return (
+      &lt;button className="my-button" onClick={this.handleClick.bind(this)}&gt;
+        快戳我
+      &lt;/button&gt;
+    );
+  }
+}
+
+export default Button;
+</code></pre><p>代码清单：<code>src/components/Button.less</code></p>
+<pre><code>.my-button {
+  color: #fff;
+  background-color: #2db7f5;
+  border-color: #2db7f5;
+  padding: 4px 15px 5px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+</code></pre><p>代码清单：<code>src/index.js</code></p>
+<pre><code>'use strict';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Button from './components/Button/Button';
+
+let root = document.getElementById('app');
+ReactDOM.render( &lt;Button /&gt;, root );
+</code></pre><p>搞定，跑一把。</p>
+<pre><code>$ npm run dev
+</code></pre><p>修改一下less文件，浏览器会自动刷新，DONE，看起来还是很不错的样子。</p>
+<h2 id="t88.devtool">8.devtool <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t88.devtool"> # </a></h2>
+<p>我们在配置中新增devtool字段，并设置值为source-map，这样我们就可以在浏览器中直接调试我们的源码，在控制台的sources下，点开可以看到<code>webpack://</code>目录，点开有惊喜哦。</p>
+<p>代码清单：<code>webpack.config.js</code></p>
+<pre><code>devtool: 'cheap-module-source-map'
+</code></pre><p>devtool可以有几个配置项：</p>
+<table>
+<thead>
+<tr>
+<th>devtool</th>
+<th>build speed</th>
+<th>rebuild speed</th>
+<th>production supported</th>
+<th>quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>eval</td>
+<td>+++</td>
+<td>+++</td>
+<td>no</td>
+<td>generated code</td>
+</tr>
+<tr>
+<td>cheap-eval-source-map</td>
+<td>+</td>
+<td>++</td>
+<td>no</td>
+<td>transformed code (lines only)</td>
+</tr>
+<tr>
+<td>cheap-source-map</td>
+<td>+</td>
+<td>o</td>
+<td>yes</td>
+<td>transformed code (lines only)</td>
+</tr>
+<tr>
+<td>cheap-module-eval-source-map</td>
+<td>o</td>
+<td>++</td>
+<td>no</td>
+<td>original source (lines only)</td>
+</tr>
+<tr>
+<td>cheap-module-source-map</td>
+<td>o</td>
+<td>-</td>
+<td>yes</td>
+<td>original source (lines only)</td>
+</tr>
+<tr>
+<td>eval-source-map</td>
+<td>–</td>
+<td>+</td>
+<td>no</td>
+<td>original source</td>
+</tr>
+<tr>
+<td>source-map</td>
+<td>–</td>
+<td>–</td>
+<td>yes</td>
+<td>original source</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t99.图标字体等资源">9.图标字体等资源 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t99.图标字体等资源"> # </a></h2>
+<p>图标字体的加载可以选择file-loader 或 url-loader 进行加载，配置如下（示例配置，大家在项目中最好还是按实际情况配置）</p>
+<pre><code>{
+  test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+  loader: "url?limit=10000"
+}
+</code></pre><p>更多loader可以参考<a href="https://github.com/webpack/docs/wiki/list-of-loaders">webpack wiki</a>。</p>
+<p>照例，我们需要把配置跑通，首先下载我们熟悉的bootstrap，它给我们提供了整套的css并且还有优秀的图标字体库。</p>
+<pre><code>$ npm install bootstrap --save
+</code></pre><p>在App.js里面应用bootstrap。
+代码清单：<code>src/container/App.js</code></p>
+<pre><code>import React, { Component } from 'react';
+import Button from '../components/Button/Button';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import './App.less';
+
+class App extends Component {
+  render(){
+    return (
+      &lt;div className="text-center"&gt;
+        &lt;Button /&gt;
+        &lt;div className="tip"&gt;&lt;/div&gt;
+        {/* 这里我们使用以下图标字体 */}
+        &lt;span className="glyphicon glyphicon-asterisk"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre><p>跑一下代码，一切正常，有没有感觉webpack果然是前端开发神器。</p>
+<h2 id="t10未完待续">未完待续 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html#t10未完待续"> # </a></h2>
+<p>请看下一篇：使用webpack搭建开发态工作流</p>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+
+
+</body></html>

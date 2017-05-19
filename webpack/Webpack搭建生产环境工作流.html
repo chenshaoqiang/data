@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- saved from url=(0192)http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOFFE</title>
+        
+    <link rel="stylesheet" type="text/css" href="./Webpack搭建生产环境工作流_files/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                YOFFE
+            
+        </div>
+        <input type="checkbox" id="idoc_nav">
+        <div class="menu_tree">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/index.html">首页</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#"><span></span>React课程专题</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97.html">React学习指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB.html">React技术分享</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html">React编码规范</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">React基础知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%B8%80%E6%AD%A5%E6%AD%A5%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E8%AF%84%E8%AE%BA%E5%BA%94%E7%94%A8.html">一步步搭建一个评论应用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/github-notetaker%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91.html">github-notetaker应用开发</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-AJAX%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html">React-AJAX的最佳实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React-router%E8%B7%AF%E7%94%B1%E5%AE%9E%E8%B7%B5.html">React-router路由实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/React%E9%AB%98%E7%BA%A7%E7%A0%94%E8%AE%A8%E8%AF%BE%E5%A4%A7%E7%BA%B2.html">React高级研讨课大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Babel%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html">Babel使用指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%85%A8%E6%A0%88Redux%E5%AE%9E%E6%88%98.html">全栈Redux实战</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B.html">Redux快速上手</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Redux%E8%B6%85%E9%85%B7%E7%9A%84%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7Redux-Devtools.html">Redux超酷的开发工具Redux-Devtools</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Redux%E7%9A%84Middleware.html">深入理解Redux的Middleware</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/JavaScript%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B.html">JavaScript函数式编程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E7%BB%84%E4%BB%B6%E6%B5%8B%E8%AF%95.html">组件测试</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E5%BC%80%E5%8F%91%E6%80%81%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建开发态工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/Webpack%E5%9F%BA%E7%A1%80.html">Webpack基础</a></li><li class="active"><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html">使用Webpack搭建生产环境工作流</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E5%BF%AB%E9%80%9F%E6%90%9E%E5%AE%9A%E5%B8%B8%E7%94%A8%E7%9A%84ES6%E6%96%B0%E7%89%B9%E6%80%A7.html">快速搞定常用的ES6新特性</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#"><span></span>前沿观察</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/ECMAScript%206%E5%85%A5%E9%97%A8.html">ECMAScript 6入门</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Immutable%E8%AF%A6%E8%A7%A3%E5%8F%8AReact%E4%B8%AD%E5%AE%9E%E8%B7%B5.html">Immutable详解及React中实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Node.js%20MVC%E6%A1%86%E6%9E%B6ThinkJS.html">Node.js MVC框架ThinkJS</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/Nodejs%205.0.0%E7%89%88%E6%9C%AC.html">Nodejs 5.0.0版本</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93PostgreSQL.html">关系型数据库PostgreSQL</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E8%BD%BB%E5%9E%8BMVVM%E6%A1%86%E6%9E%B6Vue.js.html">轻型MVVM框架Vue.js</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E6%B2%BF%E8%A7%82%E5%AF%9F/%E5%9F%BA%E4%BA%8Enodejs%E7%9A%84%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6koa.html">基于nodejs的开发框架koa</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#"><span></span>前端工程化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E6%A8%A1%E6%9D%BF.html">前端模板</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%92%8C%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E7%9A%84%E7%88%B1%E6%81%A8%E6%83%85%E4%BB%87.html">性能优化和前端工程的爱恨情仇</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/webpack%E5%85%A5%E9%97%A8%E5%8F%8A%E5%AE%9E%E8%B7%B5.html">webpack入门及实践</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96%E4%B8%8D%E5%AE%8C%E5%85%A8%E8%A3%85%E9%80%BC%E6%8C%87%E5%8D%97.html">前端工程化不完全装逼指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#"><span></span>性能优化</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E4%BB%A3%E7%A0%81%E8%B4%A8%E9%87%8F%E6%A3%80%E6%B5%8B.html">jshint代码质量检测</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/jshint%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.html">jshint配置说明</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/NC%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.html">NC性能优化</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9.html">性能优化待办事项</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%82%B9%E6%80%BB%E7%BB%93.html">性能优化点总结</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#"><span></span>技术分享</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%AD%A6%E4%B9%A0Git.html">学习Git</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.html">面向对象</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Node.js%E7%9F%A5%E8%AF%86%E8%AF%A6%E8%A7%A3.html">Node.js知识详解</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/2015%E5%B9%B4%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93.html">2015年大前端技术年终总结</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Nodejs%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html">Nodejs环境配置</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/NPM%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">NPM的使用方法</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/%E5%9F%BA%E6%9C%ACSHELL%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8.html">基本SHELL命令使用</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/Git%E5%92%8CGithub%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.html">Git和Github快速入门指南</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#"><span></span>团队</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E6%96%B0%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C%E6%8C%87%E5%8D%97.html">新员工入职指南</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E7%AC%94%E8%AF%95%E9%9D%A2%E8%AF%95%E5%A4%A7%E7%BA%B2.html">笔试面试大纲</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF%E6%A0%88%E8%A7%84%E5%88%92.html">项目技术栈规划</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/React%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B.html">React组件开发过程</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/%E5%9B%A2%E9%98%9F/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%B9%B3%E5%8F%B0.html">前端技术平台</a></li></ul></li><li><a href="http://guoyongfeng.github.io/idoc/html/CONTACT.html">CONTACT</a></li></ul>    
+        </div>
+        
+        
+        <div class="forkgithub"><a target="_blank" href="https://github.com/GuoYongfeng">fork on github</a></div>
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t0使用Webpack搭建生产环境工作流">使用Webpack搭建生产环境工作流</a><ul><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t1css文件单独加载">css文件单独加载</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t2Vendor chunk 应用代码和第三方代码分离">Vendor chunk 应用代码和第三方代码分离</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t3Common chunk 提取出应用中公共的代码">Common chunk 提取出应用中公共的代码</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t4给文件添加hash">给文件添加hash</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t5异步加载（实现资源加载的性能优化）">异步加载（实现资源加载的性能优化）</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t6CSS Module的实现">CSS Module的实现</a></li><li><a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t7UglifyJs Plugin 压缩资源">UglifyJs Plugin 压缩资源</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 style="font-size: 40px;text-align:center;color: #007cdc;" id="t0使用Webpack搭建生产环境工作流">使用Webpack搭建生产环境工作流 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t0使用Webpack搭建生产环境工作流"> # </a></h1>
+
+<h2 id="t1css文件单独加载">css文件单独加载 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t1css文件单独加载"> # </a></h2>
+<p>通过上面的例子，css文件的引入、解析、运行已经跑通，BUT，目前我们的css文件全部被打包在bundle.js一个文件里面。这可不是一件好事，后续代码量一上来，文件越来越胖，我想老板一定会抓你去做性能优化的，所以，我们需要把css文件单独打包出来。</p>
+<p>extract-text-webpack-plugin插件可以帮助我们解决这个问题，现在让我们先来下载。</p>
+<pre><code>$ npm install extract-text-webpack-plugin --save-dev
+</code></pre><p>然后配置webpack。
+代码清单：<code>webpack.config.js</code></p>
+<pre><code>var path = require('path');
+var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+module.exports = {
+    entry: [
+      'webpack/hot/dev-server',
+      'webpack-dev-server/client?http://localhost:8080',
+      path.resolve(__dirname, 'src/index.js')
+    ],
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js',
+    },
+    resolve: {
+      extension: ['', '.js', '.jsx', '.json']
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          loaders: ['react-hot', 'babel'],
+          exclude: path.resolve(__dirname, 'node_modules')
+        },
+        {
+          test: /\.css/,
+          loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        },
+        {
+          test: /\.less/,
+          loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
+        }
+      ]
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NoErrorsPlugin(),
+      new ExtractTextPlugin("bundle.css")
+    ]
+};
+</code></pre><p>同时，也需要在我们的index.html去引入bundle.css文件。
+代码清单：<code>build/index.html</code></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;React Demo&lt;/title&gt;
+  &lt;link rel="stylesheet" href="bundle.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="app"&gt;&lt;/div&gt;
+  &lt;script src="bundle.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>执行<code>npm run dev</code>后你就可以在浏览器中看到加载的分离后的css文件了。</p>
+<p>另外这里手动去修改index.html是一个不是很友好的体验，这里暂且按下不表，后续我们会通过插件来统一生成build下的资源，这样让调试和部署更加便捷。</p>
+<h2 id="t2Vendor chunk 应用代码和第三方代码分离">Vendor chunk 应用代码和第三方代码分离 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t2Vendor chunk 应用代码和第三方代码分离"> # </a></h2>
+<p>修改webpack配置中的entry入口，并且添加CommonsChunkPlugin插件抽取出第三方资源。</p>
+<p>代码清单：<code>webpack.config.js</code></p>
+<pre><code>entry: {
+ index: [
+    'webpack/hot/dev-server',
+    'webpack-dev-server/client?http://localhost:8080',
+    path.resolve(__dirname, 'src/index.js')
+  ],
+  vendor: ['react', 'react-dom']
+},
+plugins: [
+   new webpack.HotModuleReplacementPlugin(),
+   new webpack.NoErrorsPlugin(),
+   new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+   new ExtractTextPlugin("bundle.css")
+ ]
+</code></pre><p>同时我们还有修改index.html文件的引用。
+代码清单：<code>build/index.html</code></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;React Demo&lt;/title&gt;
+  &lt;link rel="stylesheet" href="bundle.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="app"&gt;&lt;/div&gt;
+  &lt;script src="vendor.js"&gt;&lt;/script&gt;
+  &lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="t3Common chunk 提取出应用中公共的代码">Common chunk 提取出应用中公共的代码 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t3Common chunk 提取出应用中公共的代码"> # </a></h2>
+<pre><code>
+module.exports = {
+  entry: {
+    bundle1: './a.jsx',
+    bundle2: './b.jsx'
+  },
+  output: {
+    filename: '[name].js'
+  },
+  module: {
+    loaders:[
+      {
+        test: /\.js[x]?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
+    ]
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('init.js')
+  ]
+}
+</code></pre><h2 id="t4给文件添加hash">给文件添加hash <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t4给文件添加hash"> # </a></h2>
+<p>我们的开发的产品最终是要上线的，添加文件hash可以解决由于缓存带来的问题，所以我们需要试着给文件加上hash。其实很简单，在文件的后面加上<code>?[hash]</code>就行，当然，这也是简单的写法。</p>
+<p>照例贴着到这个阶段的配置代码吧。</p>
+<pre><code>var path = require('path');
+var webpack = require('webpack');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var buildPath = path.resolve(__dirname, 'build');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+    entry: {
+      index: [
+        'webpack/hot/dev-server',
+        'webpack-dev-server/client?http://localhost:8080',
+        path.resolve(__dirname, 'src/index.js')
+      ],
+      vendor: ['react', 'react-dom']
+    },
+    output: {
+        path: buildPath,
+        filename: '[name].js?[hash]'
+    },
+    resolve: {
+      extension: ['', '.js', '.jsx', '.json']
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.js$/,
+          loaders: ['react-hot', 'babel'],
+          exclude: path.resolve(__dirname, 'node_modules')
+        },
+        {
+          test: /\.css/,
+          loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        },
+        {
+          test: /\.less/,
+          loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
+        },
+        {
+          test: /\.(png|jpg)$/,
+          loader: 'url?limit=8192'
+        },
+        {
+          test: /\.(woff|woff2|ttf|svg|eot)(\?v=\d+\.\d+\.\d+)?$/,
+          loader: "url?limit=10000"
+        }
+      ]
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NoErrorsPlugin(),
+      new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js?[hash]'),
+      new ExtractTextPlugin("[name].css?[hash]", {
+          allChunks: true,
+          disable: false
+      }),
+      new HtmlWebpackPlugin({
+        title: 'zhufeng-react',
+        template: './src/index.html',
+      })
+    ],
+    devtool: 'cheap-module-source-map'
+};
+</code></pre><h2 id="t5异步加载（实现资源加载的性能优化）">异步加载（实现资源加载的性能优化） <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t5异步加载（实现资源加载的性能优化）"> # </a></h2>
+<p>虽然CommonJS是同步加载的，但是webpack也提供了异步加载的方式。这对于单页应用中使用的客户端路由非常有用。当真正路由到了某个页面的时候，它的代码才会被加载下来。</p>
+<p>指定你要异步加载的 <strong>拆分点</strong>。看下面的例子</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">'/feed'</span>) {
+  showLoadingState();
+  <span class="hljs-built_in">require</span>.ensure([], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">// 这个语法痕奇怪，但是还是可以起作用的</span>
+    hideLoadingState();
+    <span class="hljs-built_in">require</span>(<span class="hljs-string">'./feed'</span>).show(); <span class="hljs-comment">// 当这个函数被调用的时候，此模块是一定已经被同步加载下来了</span>
+  });
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">'/profile'</span>) {
+  showLoadingState();
+  <span class="hljs-built_in">require</span>.ensure([], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    hideLoadingState();
+    <span class="hljs-built_in">require</span>(<span class="hljs-string">'./profile'</span>).show();
+  });
+}
+</code></pre>
+<p>剩下的事就可以交给webpack，它会为你生成并加载这些额外的 <strong>chunk</strong> 文件。</p>
+<p>webpack 默认会从项目的根目录下引入这些chunk文件。你也可以通过 <code>output.buildPath</code>来配置chunk文件的引入路径</p>
+<pre><code class="lang-js"><span class="hljs-comment">// webpack.config.js</span>
+output: {
+    path: <span class="hljs-string">"/home/proj/build/assets"</span>, <span class="hljs-comment">// webpack的build路径</span>
+    buildPath: <span class="hljs-string">"/assets/"</span> <span class="hljs-comment">// 你require的路径</span>
+}
+</code></pre>
+<h2 id="t6CSS Module的实现">CSS Module的实现 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t6CSS Module的实现"> # </a></h2>
+<p>webpack 的 css-loader 是解决这个问题的最好办法之一。简单配置一下：</p>
+<pre><code>module: {
+  loaders: [{
+    test: /\.css$/,
+    loaders: [
+      'style-loader',
+      'css-loader?modules&amp;localIdentName=[name]__[local]___[hash:base64:5]',
+      'postcss-loader'
+    ]
+  }]
+},
+postcss: [
+  require('postcss-nested')(),
+  require('cssnext')(),
+  require('autoprefixer-core')({ browsers: ['last 2 versions'] })
+]
+</code></pre><p>然后把下面的代码交给 webpack：</p>
+<p><code>js</code></p>
+<pre><code>import styles from './ChatMessage.css';
+
+class ChatMessage extends React.Component {
+  render() {
+    return (
+      &lt;div className={styles.root}&gt;
+        &lt;img src="http://very.cute.png" /&gt;
+        &lt;p className={styles.text}&gt; woooooow &lt;/p&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre><p><code>css</code></p>
+<pre><code>.root {
+  background-color: #f0f0f0;
+  &gt; img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+}
+
+.text {
+  font-size: 22px;
+}
+</code></pre><p>最后输出</p>
+<p><code>HTML</code></p>
+<pre><code>&lt;div class="ChatMessage__root__1aF8de0"&gt;
+  &lt;img src="http://very.cute.png" /&gt;
+  &lt;p class="ChatMessage__text__fo40mmi"&gt; woooooow &lt;/p&gt;
+&lt;/div&gt;
+</code></pre><p><code>CSS</code></p>
+<pre><code>.ChatMessage__root__1aF8de0 {
+  background-color: #f0f0f0;
+}
+.ChatMessage__root__1aF8de0 &gt; img {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+.ChatMessage__text__fo40mmi {
+  font-size: 22px;
+}
+</code></pre><p>简而言之，我们通过编译期 renaming 的方式为 CSS 引入了局部变量。</p>
+<h2 id="t7UglifyJs Plugin 压缩资源">UglifyJs Plugin 压缩资源 <a href="http://guoyongfeng.github.io/idoc/html/React%E8%AF%BE%E7%A8%8B%E4%B8%93%E9%A2%98/%E4%BD%BF%E7%94%A8Webpack%E6%90%AD%E5%BB%BA%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%B7%A5%E4%BD%9C%E6%B5%81.html#t7UglifyJs Plugin 压缩资源"> # </a></h2>
+<pre><code>var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+
+...
+
+plugins: [
+
+  new uglifyJsPlugin({
+    compress: {
+      warnings: false
+    }
+  }),
+  new webpack.optimize.MinChunkSizePlugin({
+    compress: {
+      warnings: false
+    }
+  }),
+  // 查找相等或近似的模块，避免在最终生成的文件中出现重复的模块
+  new webpack.optimize.DedupePlugin(),
+  // 按引用频度来排序 ID，以便达到减少文件大小的效果
+  new webpack.optimize.OccurenceOrderPlugin(),
+  new webpack.optimize.AggressiveMergingPlugin({
+      minSizeReduce: 1.5,
+      moveToParents: true
+  })
+]
+</code></pre>
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org/">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+
+
+</body></html>
