@@ -1,0 +1,99 @@
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, .05);
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+#logo {
+  display: inline-block;
+  background: url(logo.png) no-repeat left center;
+  background-size: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  margin-right: 80px;
+  color: #5c5c5c;
+}
+
+#logo:hover {
+  color: #5c5c5c;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #046bc2;
+}
+
+a:hover {
+  color: #07bcfd;
+}
+
+#nav a {
+  width: 140px;
+}
+
+#main {
+  width: 820px;
+  margin: 80px auto 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+}
+
+p {
+  padding: 10px 0;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+p, li {
+  color: #555;
+}
+
+li {
+  padding: 5px 0;
+}
+
+h4 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+h5 {
+  font-size: 1.1em;
+  margin: 15px;
+}
+
+code {
+  font: 85%/1.6em 'Monaco', 'Menlo', 'Courier New', monospace;
+  padding: 4px;
+  color: #444;
+  background: #DFF2F7;
+  tab-size: 4;
+  white-space: pre;
+  word-break: break-all;
+}
+
+pre code {
+  display: block;
+  font-size: 12px;
+  padding: 15px;
+  word-break: normal;
+  margin: 1em 0;
+  overflow-x: auto;
+}
